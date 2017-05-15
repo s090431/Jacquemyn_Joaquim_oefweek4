@@ -1,0 +1,13 @@
+<% include header %>
+<% include border %>
+<% include navigatie %>
+
+<section class="instagram">
+  <% afbeeldingen.forEach(function(afbeelding){ %>
+    <figure>
+      <a href="https://www.instagram.com/p/<%- afbeelding.id %>/?taken-by=dondiablo_family"><img src="<%- afbeelding.media %>"></a>
+    </figure>
+  <% }); %>
+</section>
+
+<% include footer %>
